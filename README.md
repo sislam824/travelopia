@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+# Flight Status Board Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Flight Status Board Application is a React-based web application that retrieves and displays flight information, including flight details, statuses, and schedules. Users can search for flights by flight number and toggle between light and dark themes can also get details of particular flight.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- **Fetch Flight Data**: Retrieve flight information from a mock API.
+- **Flight Details**: View detailed information for each flight.
+- **Search Functionality**: Search flights by their flight numbers.
+- **Responsive Design**: The application is designed to work on various screen sizes.
+- **Theme Toggle**: Switch between light and dark themes.
+- **Real-time Clock**: Displays the current time and updates every second.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- **Frontend**:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+  - React
+  - TypeScript
+  - Bootstrap for styling
+  - Axios for API requests
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Testing**:
+  - Jest for unit testing
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sislam824/travelopia.git
+   cd flight-status-board
+
+   ```
+
+2. Install dependencies:
+   npm install
+
+3. Start the application:
+   npm run dev
+4. Open your browser and navigate to
+   http://localhost:5173.
+   ```
+
+   ```
+5. Unit test
+   npm test
