@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-const App: React.FC = () => {
+export const App: React.FC = () => {
   return (
     <Router>
       <Routes>
@@ -18,5 +18,3 @@ const App: React.FC = () => {
     </Router>
   );
 };
-
-export default App;
