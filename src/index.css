@@ -1,0 +1,72 @@
+.flight-details-container {
+  background-size: cover;
+  background-position: center;
+}
+
+.custom-card {
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.flight-list-container {
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  /* position: relative; */
+}
+
+.bg-dark-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.z-index-1 {
+  position: relative;
+  z-index: 1;
+}
+
+.flight-logo {
+  width: 80px;
+  height: 80px;
+}
+
+.flight-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.table th,
+.table td {
+  vertical-align: middle;
+}
+
+.btn-link {
+  display: flex;
+  align-items: center;
+}
+
+.badge-ontime {
+  background-color: #2196f3;
+  color: white;
+}
+
+.badge-delayed {
+  background-color: #ff4c4c;
+  color: white;
+}
+
+.badge-departed {
+  background-color: #4caf50;
+  color: white;
+}
+
+.badge-boarding {
+  background-color: #ffa500;
+  color: white;
+}
+
+.badge-default {
+  background-color: #ccc;
+  color: black;
+}
