@@ -5,8 +5,8 @@
     "jsx": "react-jsx",
     "strict": true,
     "esModuleInterop": true,
-    "skipLibCheck": true
-    // "allowImportingTsExtensions": true
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": true
   },
   "include": ["src/**/*", "src/_tests_/**/*"],
   "exclude": ["node_modules", "dist"]
