@@ -36,8 +36,10 @@ The Flight Status Board Application is a React-based web application that retrie
    ```
 
 2. Install dependencies:
+
+   
      ```bash
-  npm i nstall
+  npm install
 
    ```
 
