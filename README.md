@@ -37,15 +37,26 @@ The Flight Status Board Application is a React-based web application that retrie
    
 2.Install dependencies: 
 
-npm install
+   ```
+   npm install
+   
+   ```
 
 3. Start the application:
-4. 
+
+   ```
    npm run dev
    
-5. Open your browser and navigate to
-     ```
- http://localhost:5173.
    ```
-5. Unit test
+   
+4. Open your browser and navigate to
+   
+   ```
+   npm run dev
+   
+   ```
+6. Unit test
+   ```
    npm test
+   
+   ```
