@@ -25,18 +25,25 @@ const Navbar: React.FC<{
       <div className="container-fluid justify-content-between">
         <div>
           <a className="navbar-brand" href="/">
-            <img src={logo} alt="Logo" width="30" height="30" />
+            <img
+              src={logo}
+              alt="Logo"
+              width="30"
+              height="30"
+              style={{ borderRadius: "50%" }}
+            />
           </a>
-          <span>Travelopia</span>
+          <span className="logo">Travelopia</span>
         </div>
         <div className="d-flex ">
           <form className="d-flex " onSubmit={handleSubmit}>
             <input
               className="form-control me-2"
               type="search"
-              placeholder="Search by Flight Number"
+              placeholder="Flight Number"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
+              style={{ width: "150px" }}
             />
             <div>
               <button className="btn btn-outline-success" type="submit">

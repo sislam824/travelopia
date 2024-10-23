@@ -11,6 +11,23 @@
   display: flex;
   align-items: center;
 }
+.navbar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Optional: bottom border */
+  z-index: 1000; /* Ensure navbar is above other content */
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  padding-top: 56px;
+}
 
 body {
   padding-top: 56px;

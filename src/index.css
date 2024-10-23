@@ -4,8 +4,11 @@
 }
 
 .custom-card {
-  background-color: white;
   border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(50px);
+  margin: 0 10px;
+  translate: translate(-50px, -50px);
 }
 
 .flight-list-container {
@@ -69,4 +72,25 @@
 .badge-default {
   background-color: #ccc;
   color: black;
+}
+
+.logo {
+  display: inline;
+}
+.desktop-view {
+  display: block;
+}
+.mobile-view {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .desktop-view {
+    display: none;
+  }
+  .mobile-view {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
 }

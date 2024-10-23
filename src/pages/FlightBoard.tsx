@@ -22,7 +22,7 @@ const FlightBoard = () => {
     };
 
     loadFlights();
-    const interval = setInterval(loadFlights, 30000);
+    const interval = setInterval(loadFlights, 20000);
     return () => clearInterval(interval);
   }, []);
 
@@ -58,7 +58,7 @@ const FlightBoard = () => {
   return (
     <div
       className={`  ${darkMode ? "bg-dark text-light" : "bg-light text-dark"}`}
-      style={{ minHeight: "100vh" }}
+      style={{ minHeight: "100vh", width: "100%", overflow: "hidden" }}
     >
       <Navbar
         onSearch={handleSearch}

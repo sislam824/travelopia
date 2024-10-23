@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchFlightDetails } from "../api/flightAPI";
 import { FlightDetail } from "../type";
 import Navbar from "../components/Navbar";
+import plane from "../assets/plane.png";
 
 const FlightDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -69,17 +70,36 @@ const FlightDetailPage = () => {
             darkMode ? "bg-dark text-light" : "bg-light text-dark"
           }`}
         >
-          <div className="text-center">
-            <h2 className="mb-3 display-4">Flight Details</h2>
+          <div
+            className={`${darkMode ? " text-dark " : " text-dark"} text-center`}
+          >
+            <h3 className="mb-3 display-4">Flight Details</h3>
             <div className="d-flex justify-content-center align-items-center mb-4">
               <p className="h3">
                 {currentTime.toLocaleTimeString("en-US", { hour12: true })}
               </p>
             </div>
           </div>
+          <img
+            src={plane}
+            style={{
+              width: "100%",
+              maxWidth: "400px",
+              margin: "0 auto 20px",
+              borderRadius: "10px",
+              boxShadow: "0 0 10px rgba(0, 0, 0, 0.2)",
+            }}
+            alt=""
+          />
           <div className="row g-3">
-            <div className="col-12">
-              <label className="form-label">Airline</label>
+            <div className="col-md-6">
+              <label
+                className={`form-label ${
+                  darkMode ? " text-dark" : "text-dark"
+                }`}
+              >
+                Airline
+              </label>
               <div
                 className={`form-control ${
                   darkMode ? "bg-secondary text-light" : "bg-light"
@@ -89,7 +109,14 @@ const FlightDetailPage = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <label className="form-label">Flight Number</label>
+              <label
+                className={`form-label ${
+                  darkMode ? " text-dark" : "text-dark"
+                }`}
+              >
+                {" "}
+                Flight Number
+              </label>
               <div
                 className={`form-control ${
                   darkMode ? "bg-secondary text-light" : "bg-light"
@@ -99,7 +126,13 @@ const FlightDetailPage = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <label className="form-label">Status</label>
+              <label
+                className={`form-label ${
+                  darkMode ? " text-dark" : "text-dark"
+                }`}
+              >
+                Status
+              </label>
               <div
                 className={`form-control ${
                   flightData?.status === "On Time"
@@ -118,7 +151,13 @@ const FlightDetailPage = () => {
             </div>
 
             <div className="col-md-6">
-              <label className="form-label">Departure Time</label>
+              <label
+                className={`form-label ${
+                  darkMode ? " text-dark" : "text-dark"
+                }`}
+              >
+                Departure Time
+              </label>
               <div
                 className={`form-control ${
                   darkMode ? "bg-secondary text-light" : "bg-light"
@@ -130,7 +169,13 @@ const FlightDetailPage = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <label className="form-label">Destination</label>
+              <label
+                className={`form-label ${
+                  darkMode ? " text-dark" : "text-dark"
+                }`}
+              >
+                Destination
+              </label>
               <div
                 className={`form-control ${
                   darkMode ? "bg-secondary text-light" : "bg-light"
@@ -139,8 +184,14 @@ const FlightDetailPage = () => {
                 {flightData?.destination}
               </div>
             </div>
-            <div className="col-md-12">
-              <label className="form-label">Origin</label>
+            <div className="col-md-6">
+              <label
+                className={`form-label ${
+                  darkMode ? " text-dark" : "text-dark"
+                }`}
+              >
+                Origin
+              </label>
               <div
                 className={`form-control ${
                   darkMode ? "bg-secondary text-light" : "bg-light"
