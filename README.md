@@ -29,8 +29,37 @@ The Flight Status Board Application is a React-based web application that retrie
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone https://github.com/sislam824/travelopia.git
    cd flight-status-board
 
    ```
+<<<<<<< HEAD
+=======
+   
+2.Install dependencies: 
+
+   ```
+   npm install
+   
+   ```
+
+3. Start the application:
+
+   ```
+   npm run dev
+   
+   ```
+   
+4. Open your browser and navigate to
+   
+   ```
+   npm run dev
+   
+   ```
+6. Unit test
+   ```
+   npm test
+   
+   ```
+>>>>>>> facc6eeae442c14100dc7fa1751c6b203c56c27e
