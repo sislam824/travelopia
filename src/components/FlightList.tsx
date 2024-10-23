@@ -12,19 +12,12 @@ interface FlightTableProps {
 const FlightTable: React.FC<FlightTableProps> = ({ flights, darkMode }) => {
   return (
     <div
-      className={`flight-list-container py-5  ${
+      className={`flight-list-container  ${
         darkMode ? "text-light" : "text-dark"
       }`}
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
-      }}
     >
       <div className="bg-dark-overlay"></div>
       <div className="container position-relative z-index-1">
-        <div className="text-center mb-4 text-light">
-          <h1>Flight Schedule</h1>
-        </div>
         <div
           className={`card shadow-sm ${
             darkMode ? "bg-dark text-light" : "bg-white text-dark"

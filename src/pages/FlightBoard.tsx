@@ -3,6 +3,7 @@ import { fetchFlights } from "../api/flightAPI";
 import FlightTable from "../components/FlightList";
 import { Flight } from "../type";
 import Navbar from "../components/Navbar";
+import FlightCard from "../components/flightCatd";
 
 const FlightBoard = () => {
   const [flights, setFlights] = useState<Flight[]>([]);
@@ -65,14 +66,68 @@ const FlightBoard = () => {
         darkMode={darkMode}
         toggleTheme={toggleTheme}
       />
-      <div className="row justify-content-center">
-        {filteredFlights.length === 0 ? (
-          <div className="text-center alert alert-warning">
-            No flights found matching your Flight Number .
+
+      <div
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')",
+        }}
+      >
+        <div className="text-center mb-4 text-light pt-4">
+          <h1
+            className={`overlay-text ${darkMode ? "text-light" : "text-dark"}`}
+          >
+            Flight Schedule
+          </h1>
+        </div>
+        <div className="d-flex ">
+          <div className="row justify-content-center col-lg-10 col-md-12 m-md-auto m-sm-auto ">
+            {filteredFlights.length === 0 ? (
+              <div className="text-center alert alert-warning">
+                No flights found matching your Flight Number .
+              </div>
+            ) : (
+              <FlightTable flights={filteredFlights} darkMode={darkMode} />
+            )}
           </div>
-        ) : (
-          <FlightTable flights={filteredFlights} darkMode={darkMode} />
-        )}
+
+          <div className=" carousel d-flex flex-column gap-4 col-lg-2 ">
+            <div
+              id="carouselExampleSlidesOnly"
+              className="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="3000"
+            >
+              <div className="carousel-inner">
+                {filteredFlights.map((flight, index) => (
+                  <div
+                    key={flight.flightNumber}
+                    className={`carousel-item ${index === 0 ? "active" : ""}`}
+                  >
+                    <FlightCard flights={flight} />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div
+              id="carouselExampleSlidesOnly"
+              className="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="3000"
+            >
+              <div className="carousel-inner">
+                {filteredFlights.slice(5).map((flight, index) => (
+                  <div
+                    key={flight.flightNumber}
+                    className={`carousel-item ${index === 0 ? "active" : ""}`}
+                  >
+                    <FlightCard flights={flight} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

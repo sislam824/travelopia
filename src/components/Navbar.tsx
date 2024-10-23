@@ -33,7 +33,7 @@ const Navbar: React.FC<{
               style={{ borderRadius: "50%" }}
             />
           </a>
-          <span className="logo">Travelopia</span>
+          <span className="logo fs-4">Travelopia</span>
         </div>
         <div className="d-flex ">
           <form className="d-flex " onSubmit={handleSubmit}>

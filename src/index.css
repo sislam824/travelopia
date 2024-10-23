@@ -94,3 +94,8 @@
     display: none;
   }
 }
+@media only screen and (max-width: 999px) {
+  .carousel {
+    display: none;
+  }
+}
