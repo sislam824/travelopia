@@ -57,8 +57,7 @@ Here are some screenshots of the application:
    cd flight-status-board
 
    ```
-<<<<<<< HEAD
-=======
+
    
 2.Install dependencies: 
 
@@ -85,4 +84,4 @@ Here are some screenshots of the application:
    npm test
    
    ```
->>>>>>> facc6eeae442c14100dc7fa1751c6b203c56c27e
+
