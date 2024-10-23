@@ -29,7 +29,7 @@ The Flight Status Board Application is a React-based web application that retrie
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone https://github.com/sislam824/travelopia.git
    cd flight-status-board
 
