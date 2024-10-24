@@ -29,16 +29,12 @@ Here are some screenshots of the application:
 ![Flight Details](src/assets/screenshot3.png)
 
 ### Flight Details
-![Flight Details](src/assets/screenshot4.png)
-
-### Flight Details
 ![Flight Details](src/assets/screenshot5.png)
 
 ### Flight Details
 ![Flight Details](src/assets/screenshot6.png)
 
-### Flight Details
-![Flight Details](src/assets/screenshot1.png)
+
 
 ## Technologies Used
 
