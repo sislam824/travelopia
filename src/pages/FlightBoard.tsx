@@ -81,7 +81,7 @@ const FlightBoard = () => {
           </h1>
         </div>
         <div className="d-flex ">
-          <div className="row justify-content-center col-lg-10 col-md-12 m-md-auto m-sm-auto ">
+          <div className="row justify-content-center col-lg-10 col-md-12 m-md-auto m-sm-auto m-lg-auto ">
             {filteredFlights.length === 0 ? (
               <div className="text-center alert alert-warning">
                 No flights found matching your Flight Number .
@@ -99,7 +99,7 @@ const FlightBoard = () => {
               data-bs-interval="3000"
             >
               <div className="carousel-inner">
-                {filteredFlights.map((flight, index) => (
+                {flights.map((flight, index) => (
                   <div
                     key={flight.flightNumber}
                     className={`carousel-item ${index === 0 ? "active" : ""}`}
@@ -116,7 +116,7 @@ const FlightBoard = () => {
               data-bs-interval="3000"
             >
               <div className="carousel-inner">
-                {filteredFlights.slice(5).map((flight, index) => (
+                {flights.slice(5).map((flight, index) => (
                   <div
                     key={flight.flightNumber}
                     className={`carousel-item ${index === 0 ? "active" : ""}`}
