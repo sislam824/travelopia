@@ -13,7 +13,11 @@ The Flight Status Board Application is a React-based web application that retrie
 - **Theme Toggle**: Switch between light and dark themes.
 - **Real-time Clock**: Displays the current time and updates every second.
 
-- 
+## Project presentation video
+
+https://www.youtube.com/watch?v=JmG3XLGMpRg
+
+
 ## Screenshots
 
 Here are some screenshots of the application:
